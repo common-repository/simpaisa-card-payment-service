@@ -1,0 +1,135 @@
+.cko-control-input {
+
+    width: 100%;
+    height: calc(2.25rem + 2px) !important;
+    padding: .375rem .75rem;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    background-clip: padding-box;
+    /* border: 1px solid #ced4da; */
+    border-radius: 3px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cko-p {
+    margin-bottom: 5px !important;
+}
+
+.sp-error,
+.sp-error-card {
+    display: none;
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* .payment_method_simpaisa_credit_debit_card_cko{
+ padding: 10px; 
+} */
+
+
+
+.sp_cnic_no::-webkit-outer-spin-button,
+.sp_cnic_no::-webkit-inner-spin-button,
+.sp_cko_mobile::-webkit-outer-spin-button,
+.sp_cko_mobile::-webkit-inner-spin-button,
+.sp_cko_otp::-webkit-outer-spin-button,
+.sp_cko_otp::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+span.required {
+    color: red;
+}
+
+.row-cko {
+    border-radius: 5px;
+    background: #fff;
+    padding: 10px !important;
+}
+
+.row-cko label,
+.sp_cko_otp_label {
+    margin-top: 5px;
+}
+
+/* Firefox */
+.sp_cko_otp[type=number],
+.sp_cnic_no[type=number],
+.sp_cko_mobile[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.woocommerce-checkout.processing .blockUI.blockOverlay {
+    background-image: url('../spinner.gif') !important;
+    background-position: center 50% !important;
+    background-repeat: no-repeat !important;
+    position: fixed !important;
+    content: 'Processing...';
+}
+
+.woocommerce-checkout.processing .blockUI.blockOverlay::before {
+  
+    color: #000;
+    background: #ced4da00;
+    padding: 10px;
+    text-align: center;
+    content: 'Processing...';
+    animation: none;
+    margin-top: 20px;
+    left: 43%;
+    right: 44%;
+    position: relative;
+    width: 250px;
+}
+
+.card-frame.frame--rendered {
+    opacity: 1
+}
+
+.card-frame.frame--rendered.frame--focus {
+    border: solid 1px #13395E;
+    box-shadow: 0 2px 5px 0 rgba(19, 57, 94, 0.15)
+}
+
+.card-frame.frame--rendered.frame--invalid {
+    border: solid 1px #D96830;
+    box-shadow: 0 2px 5px 0 rgba(217, 104, 48, 0.15)
+}
+
+.card-frame {
+    width: 100%; 
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    height: 40px;
+    /* margin-left: 5%; */
+}
+
+
+.simpaisa_cko_loader {
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    margin-left: -0.5em;
+    margin-top: -0.5em;
+    display: none;
+    content: "";
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+    background: url('../spinner.gif') center center;
+    background-size: cover;
+    line-height: 1;
+    text-align: center;
+    font-size: .80em;
+}
